@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Restaurant Table Reservation</title>
+    <style>
+        h1{
+            color: #ff0000;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+        }
+        div{
+            color: #0f0f0f;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+        }
+        #result{
+            font-size: 15px;
+        }
+        table{
+            background-color: #f6b60f;
+            margin-left: 35%;
+            border-spacing: 5px;
+            border-width: 10%;
+            border-style: none;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Online Restaurant Table Reservation</h1>
+
+    <div>
+        <form action="" onsubmit="return reserveTable()">
+            <table>
+                <tr>
+                    <td>Guest Name:</td>
+                    <td><input type="text" id="guestName" required></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number:</td>
+                    <td><input type="text" id="mobile" required></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td>Number of Guests:</td>
+                    <td><input type="number" id="guests" required></td>
+                </tr>
+                <tr>
+                    <td>Session Type:</td>
+                    <td>
+                        <select name="" id="session">
+                            <option value="Lunch">Lunch(12pm-3pm)</option>
+                            <option value="Dinner">Dinner(7pm-9pm)</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of Visit:</td>
+                    <td><input type="date" id="dateOfVisit" required></td>
+                </tr>
+                <tr>
+                    <td>Duration (Minutes):</td>
+                    <td><input type="number" id="duration" required></td>
+                </tr>
+                <tr>
+                    <td>Select Table:</td>
+                    <td>
+                        <select name="" id="table">
+                            <option value="Table 1">Table 1</option>
+                            <option value="Table 2">Table 2</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Payment Mode:</td>
+                    <td>
+                        <select name="" id="paymentMode">
+                            <option value="CC">Credit Card</option>
+                            <option value="DC">Debit Card</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Card Number:</td>
+                    <td><input type="text" id="cardNumber" required></td>
+                </tr>
+                <tr>
+                    <td>CVV Number:</td>
+                    <td><input type="password" id="cvv" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Reserve">
+                        <input type="reset" value="Clear">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div id="result"></div>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah's Multimedia Blog</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header{
+            background-color: #35424a;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul{
+            list-style: none;
+            padding:10px;
+        }
+        nav ul li{
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a{
+            color: #ffffff;
+        }
+        main{
+            background-color: #ffffff;
+            padding: 20px;
+        }
+        section{
+            background: rgb(206, 218, 219);
+            margin: 20px;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        img{
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
+            border: 2px solid #ddd;
+        }
+        table{
+            margin: 20px;
+        }
+        th,td{
+            padding: 12px;
+            border: 1px solid #000000;
+        }
+        ol,ul{
+            padding-left: 40px;
+            color: #333;
+        }
+        ol li{
+            list-style-type: decimal;
+        }
+        ul li{
+            list-style-type: circle;
+        }
+        a{
+            color: #ffffff;
+            text-decoration: underline;
+            padding: 10px;
+        }
+        a:hover{
+            color: #fff661;
+            text-decoration: underline;
+        }
+        header,footer{
+            background-color: #35424a;
+        }
+        footer{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        footer p{
+            color: white;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>>Sarah's Multimedia Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#audio">Audio</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#data">Data</a></li>
+                <li><a href="#form">Feedback Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About this Blog</h2>
+            <p>Welcome to my blog! Here, I share my thoughts and multimedia contents.</p>
+            <img src="logo.png" alt="">
+        </section>
+
+        <section id="audio">
+            <h2>Audio Section</h2>
+            <audio src="" controls>
+                <source src="background-music.mp3" type="audio/mpeg">
+                Your browser does not support the audio emelent.
+            </audio>
+        </section>
+
+        <section id="video">
+            <h2>Video Section</h2>
+            <video src="" width="640" height="360" controls>
+                <source src="intro-video.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+            <h3>Youtube Video</h3>
+            <iframe src="https://www.youtube.com" frameborder="0" width="640" height="360" allowfullscreen></iframe>          
+        </section>
+
+        <section id="data">
+            <h2>Data Presentation</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Location</th>
+                </tr>
+                <tr>
+                    <td>Ujjawal</td>
+                    <td>24</td>
+                    <td>Rajasthan</td>
+                </tr>
+                <tr>
+                    <td>Abc</td>
+                    <td>27</td>
+                    <td>Bangalore</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="form">
+            <h2>Feedback Form</h2>
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="comments">Comments:</label>
+                <textarea name="comments" id="comments" cols="50" rows="4" required></textarea><br><br>
+                <input type="submit" value="submit">
+            </form>
+        </section>
+
+        <section id="list">
+            <h2>List Section</h2>
+            <h3>Ordered List</h3>
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ol>
+            <h3>Unordered list</h3>
+            <ul>
+                <li>Item one</li>
+                <li>Item two</li>
+                <li>Item three</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sarah's Multimedia Blog. All rights reserved.</p>
+        <p>Follow me on social media:
+            <a href="https://twitter.com">Twitter</a>
+            <a href="https://facebook.com">FaceBook</a>
+        </p>
+    </footer>
+
+</body>
+</html>
