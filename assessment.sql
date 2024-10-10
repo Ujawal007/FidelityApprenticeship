@@ -100,3 +100,56 @@ JOIN customers c ON c.customer_id = o.customer_id
 JOIN hotel_details h ON o.hotel_id = h.hotel_id
 order BY o.order_id asc;
 
+-- Q10
+-- Create customer table
+CREATE TABLE customer (
+    cust_id VARCHAR(10) PRIMARY KEY,
+    cust_name VARCHAR(20),
+    cust_phone BIGINT,
+    cust_address VARCHAR(20)
+);
+
+-- Create delivery_partner table
+CREATE TABLE delivery_partner (
+    partner_id VARCHAR(10) PRIMARY KEY,
+    partner_name VARCHAR(15),
+    rating BIGINT
+);
+
+-- Create pizza table
+CREATE TABLE pizza (
+    pizza_id VARCHAR(10) PRIMARY KEY,
+    cust_id VARCHAR(10),
+    partner_id VARCHAR(10),
+    pizza_name VARCHAR(15),
+    pizza_type VARCHAR(15),
+    order_date DATE,
+    amount BIGINT,
+    FOREIGN KEY (cust_id) REFERENCES customer(cust_id),
+    FOREIGN KEY (partner_id) REFERENCES delivery_partner(partner_id)
+);
+
+UPDATE pizza
+SET amount = amount * 0.97
+WHERE pizza_type = 'Extra Large';
+
+-- Q11
+CREATE TABLE salesman(
+	salesman_id numeric(5) primary key,
+	name varchar(30),
+	city varchar(15),
+	commission decimal(5,2)
+);
+
+CREATE TABLE ord (
+    ord_no NUMERIC(5) PRIMARY KEY,
+    purch_amt DECIMAL(8,2),
+    ord_date DATE,
+    customer_id NUMERIC(5),
+    salesman_id NUMERIC(5),
+    FOREIGN KEY (salesman_id) REFERENCES salesman(salesman_id)
+);
+
+-- Q12
+alter table Supplier add constraint chk_contact_length check (length(contact) = 10);
+
