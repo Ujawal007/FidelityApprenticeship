@@ -2,3 +2,5 @@
 ![day6Employee](https://github.com/user-attachments/assets/b5267266-8669-4cc9-bd3d-91c7364644aa)
 ![day6Insurance](https://github.com/user-attachments/assets/2ee4d34c-86c4-46f7-ac09-20c5e50eba30)
 ![Blog_SS](https://github.com/user-attachments/assets/112ca478-05d4-415c-96b1-5e977c720ea6)
+![SQL_Q1](https://github.com/user-attachments/assets/cc383527-8b6d-410a-b668-ca4b64743489)
+![SQL_Q2](https://github.com/user-attachments/assets/8bc45285-8779-4952-a970-0493803854f5)
